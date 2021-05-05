@@ -64,7 +64,7 @@ app.put('/posts/:id',(req, res)=>{
         updatePost.title = updatedPost.title;
         updatePost.body = updatedPost.body;
 
-        let indexId = id - 1;
+        let indexId = posts.indexOf(updatePost);
         posts[indexId] = updatePost;
     
        let stringedData = JSON.stringify(posts, null, 2);

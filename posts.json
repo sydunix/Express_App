@@ -2,8 +2,8 @@
   {
     "userId": 1,
     "id": 1,
-    "title": "Testing UPDATE request",
-    "body": "Hi, sydney is UPDATING you"
+    "title": "UPDATING id 4",
+    "body": "Hello, watch me UPDATE you"
   },
   {
     "userId": 1,
@@ -20,8 +20,8 @@
   {
     "userId": 1,
     "id": 4,
-    "title": "eum et est occaecati",
-    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+    "title": "UPDATING id 4",
+    "body": "Hello, watch me UPDATE you"
   },
   {
     "userId": 1,
