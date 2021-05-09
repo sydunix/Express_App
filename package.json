@@ -4,21 +4,23 @@
   "description": "This is a REST API",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmmyTuyetLe/Express_App.git"
+    "url": "git+https://github.com/sydunix/Express_App.git"
   },
-  "author": "Emmy Le",
+  "author": "sydunix",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EmmyTuyetLe/Express_App/issues"
+    "url": "https://github.com/sydunix/Express_App/issues"
   },
-  "homepage": "https://github.com/EmmyTuyetLe/Express_App#readme",
+  "homepage": "https://github.com/sydunix/Express_App#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.7"
   }
 }

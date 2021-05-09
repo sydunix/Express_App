@@ -5,7 +5,7 @@ const fs = require('fs');
 
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 
 app.get('/', function (req,res){
     res.send('Hello world!');
@@ -57,15 +57,11 @@ app.put('/posts/:id',(req, res)=>{
     console.log(req.params.id);
 
     let id = req.params.id;
-    let updatedPost = req.body.updatedPost;
 
     let updatePost = posts.find(post => String(post.id) === id)
     if (updatePost){
-        updatePost.title = updatedPost.title;
-        updatePost.body = updatedPost.body;
-
-        let indexId = posts.indexOf(updatePost);
-        posts[indexId] = updatePost;
+        updatePost.title = req.body.title;
+        updatePost.body = req.body.body;
     
        let stringedData = JSON.stringify(posts, null, 2);
         fs.writeFile('posts.json', stringedData, (err) => {
@@ -82,7 +78,7 @@ app.put('/posts/:id',(req, res)=>{
 
 
 
-let port = 5000;
+let port = 3000;
 
 app.listen(port, function(){
     console.log('server is up and running on port: ', port);
