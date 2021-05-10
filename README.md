@@ -60,9 +60,10 @@ _Method: PUT_
 
 _URL:    http://localhost:3000/posts/101_
 
+JSON Body:
+
 ```
 
-JSON Body:
 
 {
     "userId": 3,
